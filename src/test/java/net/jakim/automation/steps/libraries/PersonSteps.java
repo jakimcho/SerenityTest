@@ -1,9 +1,9 @@
 package net.jakim.automation.steps.libraries;
 
-import net.jakim.automation.page.objects.AllProductsPage;
-import net.jakim.automation.page.objects.GeneraPage;
-import net.jakim.automation.page.objects.HomePage;
-import net.jakim.automation.page.objects.ProductCategoryPage;
+import net.jakim.automation.pages.objects.AllProductsPage;
+import net.jakim.automation.pages.objects.GeneraPage;
+import net.jakim.automation.pages.objects.HomePage;
+import net.jakim.automation.pages.objects.ProductCategoryPage;
 import net.thucydides.core.annotations.Step;
 
 public class PersonSteps {

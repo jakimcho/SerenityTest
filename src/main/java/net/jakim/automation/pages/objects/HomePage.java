@@ -1,4 +1,4 @@
-package net.jakim.automation.page.objects;
+package net.jakim.automation.pages.objects;
 
 import net.thucydides.core.annotations.DefaultUrl;
 
