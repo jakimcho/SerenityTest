@@ -1,6 +1,5 @@
 package net.jakim.automation.pages.elements;
 
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.core.pages.WebElementFacadeImpl;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,13 +9,14 @@ import org.openqa.selenium.support.pagefactory.ElementLocator;
 
 import java.util.List;
 
-public class TestMainMenu extends WebElementFacadeImpl implements TestMainMenuInterface
+public class MainMenuElementImpl
+    extends WebElementFacadeImpl implements MainMenuElement
 {
-    public TestMainMenu( final WebDriver driver,
-                         final ElementLocator locator,
-                         final WebElement webElement,
-                         final long implicitTimeoutInMilliseconds,
-                         final long waitForTimeoutInMilliseconds )
+    public MainMenuElementImpl( final WebDriver driver,
+                                final ElementLocator locator,
+                                final WebElement webElement,
+                                final long implicitTimeoutInMilliseconds,
+                                final long waitForTimeoutInMilliseconds )
     {
         super( driver,
                locator,

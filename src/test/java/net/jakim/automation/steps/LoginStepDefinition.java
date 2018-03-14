@@ -13,7 +13,14 @@ public class LoginStepDefinition
     @Given("^\"([^\"]*)\" page is opened$")
     public void openSite(String page) throws Throwable {
 
-        player.opens_Website(page);
+        player.startFromPage( page );
+        player.checksMenuItems();
+    }
+
+    @Given("^the \"([^\"]*)\" form is opened$")
+    public void navigateToForm(String page) throws Throwable {
+
+        player.startFromPage( page );
         player.checksMenuItems();
     }
 

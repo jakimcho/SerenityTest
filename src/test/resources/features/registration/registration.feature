@@ -3,8 +3,8 @@ Feature: Light registration
   The potential users should be able to make a registration on the Jack casino website.
 
   Background:
-    Given "landing" page is opened
-    And The "sign up" form is opened
+    Given "Landing" page is opened
+    And the "Login" form is opened
 
 
   @sanity-check
