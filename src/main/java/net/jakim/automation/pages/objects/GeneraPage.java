@@ -1,6 +1,6 @@
-package net.jakim.automation.page.objects;
+package net.jakim.automation.pages.objects;
 
-import net.jakim.automation.page.elements.MenuWebElement;
+import net.jakim.automation.pages.elements.MenuWebElement;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.WebElement;

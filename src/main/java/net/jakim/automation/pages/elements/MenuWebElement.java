@@ -1,8 +1,8 @@
-package net.jakim.automation.page.elements;
+package net.jakim.automation.pages.elements;
 
-import net.jakim.automation.page.objects.AllProductsPage;
-import net.jakim.automation.page.objects.HomePage;
-import net.jakim.automation.page.objects.ProductCategoryPage;
+import net.jakim.automation.pages.objects.AllProductsPage;
+import net.jakim.automation.pages.objects.HomePage;
+import net.jakim.automation.pages.objects.ProductCategoryPage;
 import org.openqa.selenium.*;
 
 import java.util.List;

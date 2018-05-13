@@ -1,9 +1,10 @@
 package net.jakim.automation.util;
 
-import net.jakim.automation.page.objects.AllProductsPage;
-import net.jakim.automation.page.objects.GeneraPage;
-import net.jakim.automation.page.objects.HomePage;
-import net.jakim.automation.page.objects.ProductCategoryPage;
+import net.jakim.automation.pages.JackLandingPage;
+import net.jakim.automation.pages.objects.AllProductsPage;
+import net.jakim.automation.pages.objects.GeneraPage;
+import net.jakim.automation.pages.objects.HomePage;
+import net.jakim.automation.pages.objects.ProductCategoryPage;
 
 public enum Pages {
     HOME("Home", new HomePage()),

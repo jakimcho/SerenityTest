@@ -1,4 +1,4 @@
-package net.jakim.automation.page.objects;
+package net.jakim.automation.pages.objects;
 
 import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import net.serenitybdd.core.annotations.findby.By;
