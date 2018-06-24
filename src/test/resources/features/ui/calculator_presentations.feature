@@ -4,7 +4,7 @@ Background:
   Given Calculator is opened
 
 @tc:15
-  Scenario Outline: User enter a number
+  Scenario Outline: User enter number <value>
     When user enters <value>
     Then Calculator displays <value>
 
