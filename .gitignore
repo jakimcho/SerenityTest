@@ -2,3 +2,8 @@
 target/**/*
 SerenityTest.iml
 **/*.iml
+/target/
+/bin/
+.classpath
+.project
+.settings/
