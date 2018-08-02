@@ -1,10 +1,10 @@
 package net.jakim.automation;
 
-import net.serenitybdd.cucumber.CucumberWithSerenity;
-import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
+import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
@@ -13,11 +13,10 @@ import cucumber.api.SnippetType;
                         "json:target/cucumber.json",
                         "junit:target/cucumber.xml"
                 },
-        features = "test/resourcesfeatures/",
+        features = "src/test/resources/features/",
         glue = "net.jakim.automation.steps",
         snippets = SnippetType.CAMELCASE,
         tags = "@jr-debug")
-public class TestRunner {
+public class Runner
+{
 }
-
-
