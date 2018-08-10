@@ -1,11 +1,10 @@
 package net.jakim.automation.steps.definition;
 
-import cucumber.api.DataTable;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.runtime.junit.Assertions;
+import io.cucumber.datatable.DataTable;
 import net.jakim.automation.steps.libraries.PersonSteps;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Assert;
@@ -67,7 +66,7 @@ public class CartStepsDefinition {
     }
 
     @When("^the player completes the Login form:$")
-    public void the_player_completes_the_Login_form(DataTable arg1) throws Exception {
+    public void the_player_completes_the_Login_form(DataTable arg1 ) throws Exception {
         System.out.println("the player completes the Login form: " + arg1.toString());
     }
 

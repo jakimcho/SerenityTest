@@ -15,7 +15,8 @@ import cucumber.api.SnippetType;
                 },
         features = "xray-features/",
         //features = "src/test/resources/features",
-        glue = "net.jakim.automation.steps.definition"
+        glue = { "net.jakim.automation.steps.definition", "net.jakim.automation.transformers" },
+        tags = "@jt:test"
 )
 public class TestRunner
 {

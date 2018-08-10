@@ -14,9 +14,9 @@ import org.junit.runner.RunWith;
                         "junit:target/cucumber.xml"
                 },
         features = "src/test/resources/features/",
-        glue = "net.jakim.automation.steps",
+        glue = { "net.jakim.automation.steps.definition", "net.jakim.automation.transformers" },
         snippets = SnippetType.CAMELCASE,
-        tags = "@jr-debug")
+        tags = "@jr:debug")
 public class Runner
 {
 }

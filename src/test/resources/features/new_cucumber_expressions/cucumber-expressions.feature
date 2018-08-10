@@ -8,8 +8,8 @@ Feature: Cucumber 3.0.2 Expressions demo
     When I add number 8.5 to that number
     Then I should have the answer of the question
 
-
+  @jt:test
   Scenario: Simple data table glu
     Given I have bought a cat:
-      | name | color | size |
-      | Lila | black | 7    |
+      | name | color | tailLength |
+      | Lila | black | 7          |
