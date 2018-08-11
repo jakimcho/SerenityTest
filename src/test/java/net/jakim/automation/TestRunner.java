@@ -1,10 +1,12 @@
 package net.jakim.automation;
 
-import net.serenitybdd.cucumber.CucumberWithSerenity;
-import org.junit.runner.RunWith;
-
 import cucumber.api.CucumberOptions;
-import cucumber.api.SnippetType;
+import net.serenitybdd.core.Serenity;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
+import net.thucydides.core.util.EnvironmentVariables;
+import net.thucydides.core.util.SystemEnvironmentVariables;
+import org.junit.Before;
+import org.junit.runner.RunWith;
 
 @RunWith( CucumberWithSerenity.class )
 @CucumberOptions(
@@ -13,12 +15,16 @@ import cucumber.api.SnippetType;
                         "json:target/cucumber.json",
                         "junit:target/cucumber.xml"
                 },
-        features = "xray-features/",
+        features = "src/test/resources/features",
         //features = "src/test/resources/features",
-        glue = "net.jakim.automation.steps.definition"
+        glue = "net.jakim.automation.steps.definition",
+        tags = "@reporting"
 )
 public class TestRunner
 {
+
 }
+
+
 
 

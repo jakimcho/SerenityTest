@@ -4,6 +4,7 @@ import net.jakim.automation.pages.objects.AllProductsPage;
 import net.jakim.automation.pages.objects.GeneraPage;
 import net.jakim.automation.pages.objects.HomePage;
 import net.jakim.automation.pages.objects.ProductCategoryPage;
+import net.serenitybdd.core.Serenity;
 import net.thucydides.core.annotations.Step;
 
 public class PersonSteps {
@@ -44,6 +45,10 @@ public class PersonSteps {
             case "Product Category":
                 page.clickOnProductCategoryMenuItem();
         }
+
+        Serenity.recordReportData()
+                .withTitle( "Jakim Custom Content from step" )
+                .andContents( "My custom contnt" );
     }
 
     @Step ("Adding {0} item to the Cart")
