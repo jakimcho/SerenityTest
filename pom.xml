@@ -19,6 +19,7 @@
         <surefire.rerunFailingTestsCount>1</surefire.rerunFailingTestsCount>
         <assertjs.version>3.9.1</assertjs.version>
         <slf4j.version>1.7.25</slf4j.version>
+        <jackson.version>2.9.6</jackson.version>
         <junit.version>5.3.0-M1</junit.version>
     </properties>
 
@@ -70,6 +71,31 @@
             <artifactId>assertj-core</artifactId>
             <version>${assertjs.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-rest-assured -->
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-rest-assured</artifactId>
+            <version>1.9.36</version>
+        </dependency>
+        <dependency>
+
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
 
     </dependencies>
